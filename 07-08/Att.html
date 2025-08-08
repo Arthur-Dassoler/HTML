@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML e básico</title>
+    <title>HTML e CSS básico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header style="text-align: center; font-style: unset; font-size: larger;">
+    <header>
         <h1>Site para redirecionamento de pesquisa</h1>
     </header>
 
-    <nav style="text-align: center; font-size: larger;">
-        <a style="text-align: center;" href="https://www.google.com/" target="_self">Fazer pesquisa!</a>
+    <nav style="font-size: larger;">
+        <a href="https://www.google.com/" target="_self">Fazer pesquisa!</a>
     </nav>
 
-    <section style="color: blue; text-align: left;">
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contribuidores do projeto &darr;</p>
+    <section class="azul" style="text-align: left;">
+        <p class="animacao">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contribuidores do projeto &darr;</p>
     </section>
 
     <article>
@@ -46,12 +47,12 @@
     </article>
 
     <aside style="text-align: right;">
-        <div style="text-align: center; margin-top: 60px; font-size: large;">
+        <div style="margin-top: 60px; font-size: large; text-align: center;">
             <b>Quer usar um rascunho onde você pode testar suas pesquisas? baixe nosso app &rarr;</b>
             <a href="Rascunho.txt" download="">Clique aqui</a>
         </div>
         <img src="Gremio_logo.png">
-        <p style="font-size: larger; margin-right: 20px;">Maior do sul &uarr;</p>
+        <p style="font-size: larger; margin-right: 20px;" >Maior do sul &uarr;</p>
     </aside>
 
     <div>
@@ -60,14 +61,13 @@
             <input type="text" id="feedback" placeholder="Digite aqui sua opinião sobre o projeto!" size="80"
                 style="display: inline">
             <label for="botaoenviar"></label>
-            <button id="botaoenviar">Enviar</button>
+            <button class="botoes">Enviar</button>
         </form>
     </div>
 
-    <footer style="text-align: center;">
+    <footer class="botoes">
         <a href="https://github.com/Arthur-Dassoler" target="_blank">Dono do projeto</a>
     </footer>
-
 
 </body>
 
