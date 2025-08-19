@@ -1,0 +1,26 @@
+.container {
+    border: 2px;
+}
+
+.divP {
+    position: relative;
+    left: 400px;
+    top: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 1000px;
+}
+
+.relative {
+    position: relative;
+}
+
+.botoes_acima {
+    position: relative;
+    top: 50px;
+    right: 500px;
+    border: 20px;
+    float: right;
+    border: 0px solid black;
+    margin: 10px
+}
