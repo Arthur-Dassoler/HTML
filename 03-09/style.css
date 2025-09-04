@@ -1,0 +1,59 @@
+*{
+    box-sizing:border-box
+}
+
+.footer {
+    height: 90px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background: linear-gradient(to left, #FFFFFF, #000000)
+}
+
+.header {
+    background: linear-gradient(to right, #FFFFFF, #000000);
+    color: black;
+    height: 120px;
+    border: 2px, solid, black;
+    position: relative;
+    
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    margin: 15px;
+    padding: 5px;
+    border: 2px, solid, black;
+    height: 70px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    border-radius: 20%;
+    top: 5px;
+    position: relative;
+}
+
+.article {
+    position: relative;
+    left: 40px;
+    width: 400px;
+    height: 500px;
+    border: 2px, solid, black;
+}
+
+.escritas {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: larger;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
