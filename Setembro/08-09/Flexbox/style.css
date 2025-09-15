@@ -1,0 +1,94 @@
+.flexcolumn {
+    display: flex;
+    height: 300px;
+    width: 900px;
+    border: 2px solid black;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    animation-name: movimentar;
+    animation-duration: 10s;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-item {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    transition: transform 0.3 ease;
+    transition-duration: 1.5s;
+    font-size: larger;
+}
+
+.flex-item:hover{
+    transform: scale(1.2);
+    background-color: rgb(42, 157, 165);
+}
+
+.flexrow{
+    height: 300px;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.titulo1 {
+    position: absolute; 
+    top:3px; 
+    left:520px;
+    animation-name: movimentarX;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: larger;
+}
+
+.titulo2 {
+    position: absolute; 
+    top:315px; 
+    left:350px;
+    animation-name: movimentarY;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: larger;
+}
+
+#tooltip {
+  position: absolute;      
+  bottom: 50px;                
+  left: 50px;               
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  visibility: hidden;       
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+
+.flex-item:hover + #tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes movimentarX {
+    0% {left:350px; color: blue;}
+    25% {left:750px; color: rgb(255, 0, 255);}
+    50% {left:1150px; color: rgb(21, 255, 0);}
+    75% {left:750px; color: rgb(255, 0, 0);}
+    100% {left:350px; color: blue}
+}
+
+@keyframes movimentarY {
+    0% {top:315px; color: blue;}
+    25% {top:447.5px; color: rgb(255, 0, 255);}
+    50% {top:580px; color: rgb(21, 255, 0);}
+    75% {top:447.5px; color: rgb(255, 0, 0);}
+    100% {top:315px; color: blue}
+}
